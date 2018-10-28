@@ -45,7 +45,8 @@ The tests are made via the Jest testing framework.
 The tests can also be made through your console window using npm run test.
 
 ## Deployment
-The webapp is automatically deployed to an external server on Heroku.  
+The webapp is automatically deployed to an external server on Heroku as long  
+as it passes all tests on circleCI.
 [TicTacToe][heroku].
 
   [heroku]: https://motherfuckingwebsite.com/
