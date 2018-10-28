@@ -20,11 +20,12 @@ Web request management
 Run the following commands
 1. npm run build
 2. npm run start
-3. open localhost:8080 on your browser
+3. open localhost:8080 on your browser  
 The webapp can also be deployed on Heroku
 [TicTacToe][heroku].
 
   [heroku]: https://motherfuckingwebsite.com/
 
 ## Maintenance
-idk mand
+If the code should be refactored or changed it must be done  
+on a seperate branch and then a pull request should be created.  
