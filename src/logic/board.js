@@ -1,4 +1,4 @@
-// gameboard.js
+// board.js
 const Square = require('./square');
 
 class Board {
