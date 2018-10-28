@@ -19,6 +19,7 @@ Packaging tools
 * * clean-webpack-plugin
 * * webpack-devserver
 * CSS-loader
+* style-loader
 
 Testing
 * Jest
