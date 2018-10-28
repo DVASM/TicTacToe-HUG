@@ -1,6 +1,3 @@
-Ótilbúið  
-
-
 Development manual
 ========
 This manual will show you how to set up the game on a fresh machine.
@@ -38,6 +35,7 @@ Continuous pipeline
 4. Install Heroku
 
 ## Building
+Run the following commands on your console window
 1. npm run build
 2. npm run start
 
