@@ -5,3 +5,9 @@ test('return an array with an empty string', () => {
     const testBoard = new Board();
     expect.arrayContaining([[{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}]]);
 });
+
+// constructor test ()
+test('Should return an array with an empty string', () => {
+    const testBoard = new Board();
+    expect.arrayContaining([[{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}]]);
+});

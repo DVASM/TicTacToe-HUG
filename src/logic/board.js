@@ -1,11 +1,13 @@
 // board.js
 const Square = require('./square');
+const Game = require('./game');
 
 class Board {
-    constructor(grid) {
-        this.grid = [[new Square(), new Square(), new Square()],
-        [new Square(), new Square(), new Square()],
-        [new Square(), new Square(), new Square()]
+    constructor() {
+        this.counter = 0;
+        this.grid = [[new Square(''), new Square(''), new Square('')],
+        [new Square(''), new Square(''), new Square('')],
+        [new Square(''), new Square(''), new Square('')]
         ];
     }
 }
