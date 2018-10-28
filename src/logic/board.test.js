@@ -6,7 +6,7 @@ test('return an array with an empty string', () => {
     expect.arrayContaining([[{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}]]);
 });
 
-// makeMove counter test
+// makeMove counter increment test
 test('Should increment counter + 1 when called', () => {
     const testBoard = new Board(); 
     const testRow = 0; 

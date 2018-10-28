@@ -11,7 +11,7 @@ class Board {
         ];
     }
 
-// input player value into grid
+//  input player value into grid
     makeMove(row, col, playerTurn) {
         console.log(row, col, playerTurn + ": Made move");
         if (this.grid[row][col].isEmpty()) {
