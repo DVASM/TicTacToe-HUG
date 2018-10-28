@@ -10,6 +10,10 @@ class Square {
             this.box = 'X';
             return true; 
         }
+        else if (counter === 1 && this.box === '') {
+            this.box = 'O';
+            return true; 
+        }
     }
 }
 module.exports = Square; 
