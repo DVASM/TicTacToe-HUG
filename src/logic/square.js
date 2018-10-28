@@ -7,12 +7,17 @@ class Square {
         console.log('Placing symbol....');
         if (counter === 0 && this.box === '') {
             this.box = 'X';
-            return true; 
+            return true;
         }
         else if (counter === 1 && this.box === '') {
             this.box = 'O';
-            return true; 
+            return true;
+        }
+        else {
+            console.log('This square has already been marked!');
+            return false;
         }
     }
 }
-module.exports = Square; 
+
+module.exports = Square;

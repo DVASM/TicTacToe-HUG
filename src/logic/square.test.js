@@ -25,3 +25,10 @@ test('Should return true if the box is not already occupied', () => {
     var testCounter = 0; 
     expect(testSquare.makeMove(testCounter)).toBeTruthy();
 });
+// Test if the square is taken
+test('Should return true if the box is not already occupied', () => {
+    var testSquare = new Square(); 
+    var testCounter = 0; 
+    testSquare.makeMove(testCounter);
+    expect(testSquare.makeMove(testCounter)).toBeFalsy();
+}); 
