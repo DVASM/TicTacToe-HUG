@@ -16,7 +16,6 @@ the technological infrastructure to support a website for a simple program.
 In this case the program is a game of tictactoe.  
 The game is programed in JS, using npm as an automatic build tool. For automatic CI  
 we are using circleCI and Heroku as build environment on an external server.  
-We are using Puppeteer to run end-to-end tests. 
 
 ## Documentation
 The documents folder contain pdf documents for  
