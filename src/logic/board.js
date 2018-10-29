@@ -32,7 +32,7 @@ class Board {
                 this.grid[0][j].box === this.grid[2][j].box &&
                 this.grid[0][j].box != '') {
         
-                return true;
+                return true; 
             }
         }
     }

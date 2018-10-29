@@ -41,5 +41,5 @@ test('Should return true if winning conditions have been met horizontally', () =
     testBoard.grid[0][0].box = 'X';
     testBoard.grid[1][0].box = 'X';
     testBoard.grid[2][0].box = 'X';
-    expect(testBoard.checkWinner()).toBeTruthy();
+    expect(testBoard.checkWinner()).toBeTruthy(); 
 });
