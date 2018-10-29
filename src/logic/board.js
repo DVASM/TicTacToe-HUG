@@ -24,5 +24,18 @@ class Board {
         }
     }
     
+    // checks winning conditions
+    checkWinner() {
+        // vertical test
+        for (var j = 0; j < 3; j++) {
+            if (this.grid[0][j].box === this.grid[1][j].box &&
+                this.grid[0][j].box === this.grid[2][j].box &&
+                this.grid[0][j].box != '') {
+        
+                return true; 
+            }
+        }
+    }
+    
 }
 module.exports = Board;
