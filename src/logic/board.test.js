@@ -6,6 +6,7 @@ test('return an array with an empty string', () => {
     const testBoard = new Board();
     expect.arrayContaining([[{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}]]);
 });
+
 // makeMove counter increment test
 test('Should increment counter + 1 when called', () => {
     const testBoard = new Board(); 
@@ -78,3 +79,4 @@ test('Should return true if winning conditions have been met horizontally', () =
     expect(testBoard.checkWinner()).toBeFalsy();
 });
 // printSquares not tested, works in console
+
