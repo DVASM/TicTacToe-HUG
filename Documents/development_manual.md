@@ -50,4 +50,4 @@ The webapp is automatically deployed to an external server on Heroku as long
 as it passes all tests on circleCI.
 [TicTacToe][heroku].
 
-  [heroku]: https://motherfuckingwebsite.com/
+  [heroku]: https://shrouded-fortress-45853.herokuapp.com/
