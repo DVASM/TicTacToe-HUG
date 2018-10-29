@@ -4,7 +4,7 @@ const game = require("../logic/game");
 
 
 var newGame;
-var playerTurn;
+//var playerTurn;
 
 
 router.get("/", (req, res) => {
@@ -26,6 +26,28 @@ router.get("/newgame", (req, res) => {
     res.status(200).send({game: newGame});
   });
 
+  router.get("/makemove/:var1/:var2", (req, res) => {
+    newGame.printTable(); //console debug
+    
+    if(newGame.gameStatus === true){
+      newGame.playerMove (req.params.var1, req.params.var2);
+      newGame.gameEnded();
+      res.status(200).send({
+        "fillsquare": playerMove,
+        "gameStatus": newGame.gameStatus,
+      });
+      console.log("gamestatus is " + newGame.gameStatus)
+      playerMove = newGame.playerTurn //Tharf ad geta bedid med ad senda ut thessa 
+    }else{
+    res.status(200).send({
+      "fillsquare": playerMove,
+      "gameStatus": newGame.gameStatus,
+    });
+    
+  }
+    //res.status(200).send({ playerturn: newGame.playerTurn });
+  });
+  
 
 
 module.exports = router;
