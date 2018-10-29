@@ -19,3 +19,18 @@ test('Should return true if a winning condition has been met, or draw', () => {
     const testGame = new Game(); 
     expect(testGame.gameEnded()).toBeFalsy(); 
 });
+
+// changePlayer symbol X 
+test('Should change player to O, if current player is X', () => {
+    const testGame = new Game(); 
+    testGame.changePlayer(); 
+    expect(testGame.playerTurn).toBe('O');
+});
+
+// changePlayer symbol O 
+test('Should change player to X, if current player is O', () => {
+    const testGame = new Game(); 
+    testGame.playerTurn = 'O';
+    testGame.changePlayer(); 
+    expect(testGame.playerTurn).toBe('X');
+});
