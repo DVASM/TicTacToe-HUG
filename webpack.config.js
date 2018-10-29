@@ -9,13 +9,13 @@ let pathsToClean = [
 
 module.exports = {
 	//mode: 'development',
-	entry: { main: './src/logic/index.js'},
+	entry: { main: './src/client/index.js'},
 	output: {
 		filename: 'main.js', 
 		path: path.resolve(__dirname, 'dist')
 	},
 	plugins: [
-	new HtmlWebpackPlugin({inject: 'body'}),
+	new HtmlWebpackPlugin({template: "./src/client/index.html", inject: 'body'}),
 	new CleanWebpackPlugin(pathsToClean),
 	/*
 	new webpack.ProvidePlugin({ 
