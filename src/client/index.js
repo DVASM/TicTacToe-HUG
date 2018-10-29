@@ -1,6 +1,7 @@
 // index.js
 import style from './styles.css';
 var player = "O";
+var counter = 0; 
 var boxes = document.getElementsByClassName('box');
 var resetButton = document.getElementById("reset-button");
 var headLine = document.getElementById("player-turn-text");
@@ -31,6 +32,7 @@ function newGame() {
 }
 
 function selectBox(var1, var2) {
+    counter++;
     headLine.innerHTML = player + " it's your turn!";
     var getId = var1.toString() + var2.toString();
     fetch("/game/makemove/" + var1 + "/" + var2)
@@ -45,7 +47,12 @@ function selectBox(var1, var2) {
                 for (var i = 0; i < boxes.length; i++) {
                     boxes[i].disabled = true;
                 };
-                headLine.innerHTML = "Game Over, Result: " + data.fillsquare;
+                if(counter === 9) {
+                    headLine.innerHTML = "Draw!";
+                }
+                else {
+                    headLine.innerHTML = "Winner is: " + data.fillsquare;
+                }
             }
         });
     }
