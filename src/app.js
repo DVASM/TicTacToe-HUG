@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const game = require("./server/index"); //herna var eg að profa gera nkl sama fyrir þessa game skrá bara til að prófa mig áfram
+const game = require("./server/api"); //herna var eg að profa gera nkl sama fyrir þessa game skrá bara til að prófa mig áfram
 
 // Serve static files
 app.use(express.static(path.join(__dirname, "../", "dist")));

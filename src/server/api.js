@@ -8,12 +8,12 @@ var newGame;
 
 
 router.get("/", (req, res) => {
-    res.status(405).send({ error: "GET method not allowed here, try OPTIONS." });
+    res.status(404).send({ error: "GET method not allowed here, try OPTIONS." });
 });
 
 router.options("/", (req, res) => {
     const options = {
-        options: { get: ["/closegame", "/newgame", "/resetboard", "makemove/{var1}/{var2}"] }
+        options: { get: ["/newgame", "makemove/{var1}/{var2}"] }
     };
     res.status(200).send(options);
 });

@@ -29,6 +29,7 @@ function newGame() {
             return res.json();
         })
     headLine.innerHTML = "X, It's your turn!";
+    counter = 0; 
 }
 
 function selectBox(var1, var2) {
