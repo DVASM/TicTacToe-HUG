@@ -33,6 +33,7 @@ test('Should return true if input has been placed', () => {
     const testPlayer = 'X';
     testBoard.makeMove(testRow, testCol, testPlayer);
     expect(testBoard.makeMove(testRow, testCol, testPlayer)).toBeFalsy(); 
+
 });
 
 // checkWinner vertical test 
