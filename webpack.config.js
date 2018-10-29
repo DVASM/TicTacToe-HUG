@@ -17,10 +17,11 @@ module.exports = {
 	plugins: [
 	new HtmlWebpackPlugin({inject: 'body'}),
 	new CleanWebpackPlugin(pathsToClean),
+	/*
 	new webpack.ProvidePlugin({ 
       $: 'jquery',
       jQuery: 'jquery',
-    }),
+    }),*/
 	],
 
 	devServer: { 
