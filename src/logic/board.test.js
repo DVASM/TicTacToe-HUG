@@ -71,3 +71,9 @@ test('Should return true if winning conditions have been met horizontally', () =
     testBoard.counter = 9; 
     expect(testBoard.checkWinner()).toBeTruthy();
 });
+// checkWinner no winner
+test('Should return true if winning conditions have been met horizontally', () => {
+    const testBoard = new Board(); 
+    testBoard.grid[0][2].box = 'X';
+    expect(testBoard.checkWinner()).toBeFalsy();
+});

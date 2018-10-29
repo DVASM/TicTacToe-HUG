@@ -56,6 +56,11 @@ class Board {
             console.log('Draw!');
             return true;
         }
+        // Game not over
+        else {
+            console.log('Game goes on');
+            return false;
+        }
     }
 
 }
