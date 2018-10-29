@@ -8,7 +8,7 @@ verticaly or diagonaly. If these conditions are not fulfilled, the game
 will result in a draw.
 
 ## The design
-## first version
+## First version
 For our first version of the game, our design will be simple.  
 It will be split into 4 classes. The first and the main class will be called TicTacToe.  
 It’s variables will be 2 players, 1 WinCondition and 1 board.  
@@ -22,7 +22,7 @@ the win conditions and returns the winner or if it’s a draw. It also returns w
 
 ![Image](https://image.ibb.co/i8jGbV/Tic-Tac-Toe.png "class diagram1")
 
-## final version
+## Final version
 The final version of the game ended with only three classes.  
 The first class is the Square class. The constructor creates a box and  
 and the class has the functions isEmpty, which checks if the box is empty  
