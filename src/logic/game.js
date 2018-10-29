@@ -8,6 +8,13 @@ class Game {
         this.playerTurn = 'X';
         console.log('Game status: ' + this.gameStatus);
     }
+
+    // Game over
+    gameEnded() {
+        if (this.board.checkWinner() === true) {
+            return this.gameStatus = false;
+        }
+    }
 }
 
 module.exports = Game; 
