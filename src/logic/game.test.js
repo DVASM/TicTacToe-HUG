@@ -13,3 +13,9 @@ test('Should return a gameboard as array', () => {
     const testGame = new Game(); 
     expect.arrayContaining([[{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}], [{"box": ""}, {"box": ""}, {"box": ""}]]);
 });
+
+// gameEnded return gamestatus = false
+test('Should return true if a winning condition has been met, or draw', () => {
+    const testGame = new Game(); 
+    expect(testGame.gameEnded()).toBeFalsy(); 
+});
