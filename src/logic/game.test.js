@@ -34,3 +34,12 @@ test('Should change player to X, if current player is O', () => {
     testGame.changePlayer(); 
     expect(testGame.playerTurn).toBe('X');
 });
+
+// changePlayer Game is over
+test('Should not change player if game is over', () => {
+    const testGame = new Game(); 
+    testGame.gameStatus = false;
+    testGame.playerTurn = 'O';
+    testGame.changePlayer(); 
+    expect(testGame.playerTurn).toBe('O');
+});
