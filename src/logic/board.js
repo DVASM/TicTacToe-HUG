@@ -62,6 +62,16 @@ class Board {
             return false;
         }
     }
-
+    // Print squares on gameBoard
+    printSquares() {
+        var string = '';
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < this.grid.length; j++) {
+                string += this.grid[i][j].box + ' ';
+            }
+            console.log(string);
+            string = "";
+        }
+    }
 }
 module.exports = Board;

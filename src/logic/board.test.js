@@ -77,3 +77,4 @@ test('Should return true if winning conditions have been met horizontally', () =
     testBoard.grid[0][2].box = 'X';
     expect(testBoard.checkWinner()).toBeFalsy();
 });
+// printSquares not tested, works in console
