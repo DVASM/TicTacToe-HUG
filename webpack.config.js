@@ -1,34 +1,38 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack')
 
 let pathsToClean = [
-  'dist'
+	'dist'
 ]
 
 module.exports = {
 	//mode: 'development',
-	entry: { main: './src/logic/index.js'},
+	entry: { main: './src/client/index.js' },
 	output: {
-		filename: 'main.js', 
+		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist')
 	},
 	plugins: [
-	new HtmlWebpackPlugin({inject: 'body'}),
-	new CleanWebpackPlugin(pathsToClean),
-	new webpack.ProvidePlugin({ 
-      $: 'jquery',
-      jQuery: 'jquery',
-    }),
+		new HtmlWebpackPlugin({ template: "./src/client/index.html", inject: 'body' }),
+		new CleanWebpackPlugin(pathsToClean)
 	],
-
-	devServer: { 
+	devServer: {
 		port: 3000,
 		open: true,
 		proxy: {
-		//"/api": "http://localhost:8080"
 		}
-	}
+	},
+
+	module: { ///css dót
+		rules: [
+			{
+				test: /\.css$/,
+
+				use: ['style-loader', 'css-loader']
+			}
+		]
+	},
+
 }
 
