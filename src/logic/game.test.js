@@ -27,3 +27,10 @@ test('Should change player to O, if current player is X', () => {
     expect(testGame.playerTurn).toBe('O');
 });
 
+// changePlayer symbol O 
+test('Should change player to X, if current player is O', () => {
+    const testGame = new Game(); 
+    testGame.playerTurn = 'O';
+    testGame.changePlayer(); 
+    expect(testGame.playerTurn).toBe('X');
+});
