@@ -43,6 +43,15 @@ class Board {
                 return true;
             }
         }
+        if (this.grid[0][0].box == this.grid[1][1].box &&
+            this.grid[0][0].box == this.grid[2][2].box &&
+            this.grid[0][0].box != '' ||
+            this.grid[0][2].box == this.grid[1][1].box &&
+            this.grid[0][2].box == this.grid[2][0].box &&
+            this.grid[0][2].box != '') {
+
+            return true;
+        }
     }
 
 }
