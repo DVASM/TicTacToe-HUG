@@ -15,6 +15,21 @@ class Game {
             return this.gameStatus = false;
         }
     }
+
+    // Swap between players
+    changePlayer() {
+        if (this.playerTurn === "X" && this.gameStatus === true) {
+            this.playerTurn = "O";
+        }
+        else if (this.playerTurn === 'O' && this.gameStatus === true) {
+            this.playerTurn = "X";
+        }
+        else {
+            console.log('Game is over.');
+        }
+}
+
+
 }
 
 module.exports = Game; 
