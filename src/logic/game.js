@@ -27,7 +27,13 @@ class Game {
         else {
             console.log('Game is over.');
         }
-}
+    }
+    // Print gameBoard
+    printTable() {
+        return this.board.printSquares();
+    }
+        
+
 
 
 }
