@@ -52,6 +52,10 @@ class Board {
 
             return true;
         }
+        else if (this.counter === 9) {
+            console.log('Draw!');
+            return true;
+        }
     }
 
 }
