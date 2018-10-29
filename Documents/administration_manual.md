@@ -25,7 +25,7 @@ Run the following commands
 The webapp can also be deployed on Heroku
 [TicTacToe][heroku].
 
-  [heroku]: https://motherfuckingwebsite.com/
+  [heroku]: https://shrouded-fortress-45853.herokuapp.com/
 
 ## Maintenance
 If the code should be refactored or changed it must be done  
