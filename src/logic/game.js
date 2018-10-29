@@ -32,10 +32,19 @@ class Game {
     printTable() {
         return this.board.printSquares();
     }
-        
-
-
-
+        // Input player moves
+    playerMove(row, col) {
+        console.log('Making move for ' + this.playerTurn);
+        if (this.board.makeMove(row, col, this.playerTurn)) {
+            console.log('Move made: ' + this.playerTurn);
+            this.changePlayer();
+            this.printTable();
+            console.log("Player " + this.playerTurn + " it's your turn!");
+        }
+        else {
+            console.log('Square is alredy taken!');
+        };
+    } 
 }
 
 module.exports = Game; 
