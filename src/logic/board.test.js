@@ -1,3 +1,4 @@
+// Board test file
 const Board = require('./board');
 
 // test for board
@@ -43,4 +44,12 @@ test('Should return true if winning conditions have been met horizontally', () =
     testBoard.grid[1][0].box = 'X';
     testBoard.grid[2][0].box = 'X';
     expect(testBoard.checkWinner()).toBeTruthy(); 
+});
+// checkWinner horizontal test
+test('Should return true if winning conditions have been met horizontally', () => {
+    const testBoard = new Board(); 
+    testBoard.grid[0][0].box = 'X';
+    testBoard.grid[0][1].box = 'X';
+    testBoard.grid[0][2].box = 'X';
+    expect(testBoard.checkWinner()).toBeTruthy();
 });
